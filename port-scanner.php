@@ -1,5 +1,5 @@
 <form method="post" >
-	<input type="text" class="putin" name="domain" title="Masukan Domain atau IP address Target" placeholder="Domain / IP" required/>
+	<input type="text" name="domain" title="Masukan Domain atau IP address Target" placeholder="Domain / IP" required/>
 	<input type="submit" value="Scan" />
 </form>
 
