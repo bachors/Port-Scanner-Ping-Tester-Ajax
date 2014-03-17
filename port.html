@@ -1,0 +1,16 @@
+<form id="port">
+	<input type="text" name="domain" title="Masukan Domain atau IP address Target" placeholder="Domain / IP" required/>
+	<input type="submit" id="submit" value="Scan & Ping" />
+</form>
+<div id="tampil"></div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(document).ready(function(){										 
+		$('#submit').click(function(){											 
+			$.post("proses.php", $("#port").serialize(),  function(response) {
+				$('#tampil').html(response);
+			});
+			return false;											 
+		});										 
+	});
+</script>
